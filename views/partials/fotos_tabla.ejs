@@ -1,0 +1,22 @@
+<main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Descripción</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% arrFotos.forEach((foto, idx) => { %>
+        <tr>
+          <td><%= idx + 1 %></td>
+          <td><%= foto.descripcion %></td>
+          <td><img width="120" src="<%= foto.url %>" /></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</main>
