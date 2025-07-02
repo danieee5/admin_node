@@ -15,8 +15,8 @@ router.get('/photos', async function(req, res, next) {
   const URL = 'https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json';
 
   try {
-    //solo llamar asi!!!
-    
+    //solo llamar asi!!! asi le salio a jimmy lol
+
     const response = await axios.get(URL);  // Llama a la API
 
     res.render('fotos', { title: 'Fotos', fotos: response.data });
